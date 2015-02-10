@@ -65,7 +65,7 @@ RSpec.configure do |config|
     config.default_formatter = 'doc'
   end
 
-# This file is copied to spec/ when you run 'rails generate rspec:install'
+This file is copied to spec/ when you run 'rails generate rspec:install'
 .
 .
 .

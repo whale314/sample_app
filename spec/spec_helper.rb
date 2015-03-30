@@ -94,3 +94,4 @@ end
   Kernel.srand config.seed
 =end
 end
+require 'capybara/rspec'

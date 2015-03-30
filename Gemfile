@@ -31,6 +31,7 @@ gem 'guard-rspec'
 gem 'capybara', '~> 2.4.4'
 gem 'slim', '~> 3.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt', '~> 3.1.5'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

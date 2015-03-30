@@ -20,16 +20,16 @@ describe "Static pages", type: :feature do
 describe "Home page" do
    before { visit root_path }
 
-    it "should have the h1 'Sample App'" do
+	  it "should have the h1 'Sample App'" do
       visit root_path
       p page
       expect( page ).to have_selector( 'h1', text: 'Sample App' )
     end
     
     it "should have the base title" do
-  visit root_path
-  Rails.logger.debug page
-    expect(page).to have_title("Ruby on Rails Tutorial Sample App")
+ 	visit root_path
+	Rails.logger.debug page
+  	expect(page).to have_title("Ruby on Rails Tutorial Sample App")
     end
      it "should not have a custom page title" do
       visit root_path
@@ -53,11 +53,11 @@ end
 describe "About page" do
 
     it "should have the h1 'About Us'" do
-      visit about_path  
+      visit about_path	
       expect( page ).to have_selector( 'h1', text: 'About Us' )
     end
 
-    it "should have the title 'About Us'" do
+  	it "should have the title 'About Us'" do
   visit about_path
   expect(page).to have_title("Ruby on Rails Tutorial Sample App | About Us")
 end
@@ -70,9 +70,9 @@ end
       expect( page ).to have_selector( 'h1', text: 'Contact' )
     end
 
-    it "should have the title 'Contact'" do
+  	it "should have the title 'Contact'" do
   visit contact_path
   expect(page).to have_title("Ruby on Rails Tutorial Sample App | Contact")
 end
   end
-  end
+	end
